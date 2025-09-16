@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drag & Drop Project Board</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h2>Drag & Drop</h2>
+
+  <div class="form">
+    <input type="text" id="title" placeholder="Project Title" />
+    <textarea id="description" placeholder="Project Description"></textarea>
+    <button id="addBtn">Add Project</button>
+  </div>
+
+  <div class="board">
+    <div class="box" id="left">
+      <h3>Active Projects</h3>
+      <div class="list" id="activeList"></div>
+    </div>
+
+    <div class="box" id="right">
+      <h3>Completed Projects</h3>
+      <div class="list" id="completedList"></div>
+    </div>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+</html>
